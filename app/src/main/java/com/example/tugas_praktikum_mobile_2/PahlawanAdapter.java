@@ -41,7 +41,7 @@ public class PahlawanAdapter extends PahlawanModel.Adapter<PahlawanAdapter.ViewH
         return new ViewHolder(itemRow);
     }
 
-//    @Override
+    //    @Override
     public void onBindViewHolder(@NonNull  PahlawanModel.ViewHolder viewHolder, int i) {
         Glide.with(context).load(getPahlawanModels().get(i).getFotoPahlawan()).into(viewHolder.ivFotoPahlawan);
         viewHolder.tvNamaPahlawan.setText(getPahlawanModels().get(i).getNamaPahlawan());
@@ -49,7 +49,7 @@ public class PahlawanAdapter extends PahlawanModel.Adapter<PahlawanAdapter.ViewH
 
     }
 
-//    @Override
+    //    @Override
     public int getItemCount() {
         return 0;
     }
@@ -66,6 +66,5 @@ public class PahlawanAdapter extends PahlawanModel.Adapter<PahlawanAdapter.ViewH
             tvDetailPahlawan        =   itemView.findViewById(R.id.tvDetailPahlawan);
         }
     }
-
 
 }
